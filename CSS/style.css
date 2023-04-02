@@ -1,5 +1,5 @@
 /* FONTS */
-
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 /* REMOVE DEFAULT STYLING */
 *{
@@ -11,11 +11,81 @@
 
 /* REUSABLE STYLES */
 
+:root{
+  --main-color:rgb(255, 247, 240);
+  --josh-intro-color:rgb(0,0,0);
+  --paragraph-color:#7A746E;
+  --purple-background--:rgb(117, 92, 222);
+  --yellowish-background--:rgb(246, 165, 96);
+  --apps-background--:rgb(243, 158, 158);
+  --photography-background--:rgb(97, 196, 183);
+  --public-speaking-background--:rgb(235, 117, 101);;
+  --motion-graphics-background--:rgb(85, 32, 73);
+  --skills-font:24px;
+  --buttons-font:16px;
+  --paragraphs-font:18px;
+  --main-intro:44px;
+  --name--:40px
+  --projects-intro:32px;
+}
+
+body{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--main-color);
+  margin: 4% 10%;
+}
+  
 /*  NAVBAR */
+#navbar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.nav-bar-cta{
+  margin-left: auto;
+}
 
 /*  HERO-INTRO  */
+.hero{
+  text-align: center;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.josh-intro-1{
+  font-weight: bold;
+  font-size: var(--main-intro);
+  color: var(--josh-intro-color);
+  padding-bottom: 1rem;
+}
+
+.josh-intro-2{
+  color: var(--paragraph-color);
+  font-size: var(--paragraphs-font);
+}
 
 /* SKILLS */
+
+.skills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.skill-intro{
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: var(--main-intro);
+  color: var(--josh-intro-color);
+}
 
 /* NAME AND ABOUT SECTION  */
 
