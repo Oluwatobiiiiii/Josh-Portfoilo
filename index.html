@@ -15,7 +15,6 @@
     <body>
 
         <!-- NAVBAR -->
-
         <section id="navbar">
             <div class="nav-bar">
                 <div class="navbar-logo">
@@ -23,8 +22,11 @@
                 </div>
             </div>
 
-            <div class="nav-bar-cta">
-                <button class="cta-btn"><a href="mailto:thejoshuaopaleke@gmail.com">Free Consultation</a></button>
+            <div class="josh-social-media">
+                <a href="http://twitter.com/joshopaleke"><i class="fa-brands fa-twitter fa-2xl" style="color: #eb756b;"></i></a>
+                <a href="https://www.behance.net/joshopaleke"><i class="fa-brands fa-square-behance fa-2xl" style="color: #ef756b;"></i></a>
+                <a href="https://www.linkedin.com/in/joshopaleke/"><i class="fa-brands fa-linkedin fa-2xl" style="color: #ef756b;"></i></a>
+                <a href="https://www.instagram.com/joshopaleke/"><i class="fa-brands fa-instagram fa-2xl" style="color: #ef756b;"></i></a>
             </div>
         </section>
 
@@ -93,7 +95,7 @@
                 <img src="Images/Day 7.jpg" alt="Setting-page" class="project-2" width="300" height="300">
                 <img src="Images/Day 15.jpg" alt="Analytics chart" class="project-3" width="300" height="300">
                 <img src="Images/Day 17.jpg" alt="Tracker App" class="project-4"width="300" height="300">
-                <img src="Images/Day 18.jpg" alt="Onboarding page for " class="project-5" width="300" height="300">
+                <img src="Images/Day 8.jpg" alt="Error 404 page" class="project-5" width="300" height="300">
             </div>
 
             <div class="arrows-images">
@@ -121,11 +123,19 @@
             <footer id="josh-footer">
                 <img src="Images/logo.svg" alt="josh-logo">
                 
-                <div class="josh-socials">
-                    <a href="http://twitter.com/joshopaleke"><i class="fa-brands fa-twitter fa-2xl" style="color: #eb756b;"></i></a>
-                    <a href="https://www.behance.net/joshopaleke"><i class="fa-brands fa-square-behance fa-2xl" style="color: #ef756b;"></i></a>
-                    <a href="https://www.linkedin.com/in/joshopaleke/"><i class="fa-brands fa-linkedin fa-2xl" style="color: #ef756b;"></i></a>
-                    <a href="https://www.instagram.com/joshopaleke/"><i class="fa-brands fa-instagram fa-2xl" style="color: #ef756b;"></i></a>
+                <div class="josh-email">
+                   <form action="Php/submit-form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="name" required>
+
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <button type="submit">Submit</button>
+                   </form>
                 </div>
             </footer>
         </section>

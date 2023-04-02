@@ -3,8 +3,8 @@
   $email = $_POST['email'];
   $message = $_POST['message'];
   
-  $to = 'thejoshuaopaleke@gmail.com';
-  $subject = 'New form submission';
+  $to = 'codingninjaaa@gmail.com';
+  $subject = 'New form submission .$name';
   $body = "Name: $name\nEmail: $email\nMessage:\n$message";
   
   if (mail($to, $subject, $body)) {

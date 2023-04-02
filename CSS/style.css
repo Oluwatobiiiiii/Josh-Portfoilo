@@ -39,13 +39,19 @@ body{
 #navbar{
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 10px;
 }
 
 .nav-bar-cta{
   margin-left: auto;
+}
+
+.josh-social-media{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  align-items: center;
+  gap: 25px;
 }
 
 /*  HERO-INTRO  */
@@ -68,6 +74,7 @@ body{
 .josh-intro-2{
   color: var(--paragraph-color);
   font-size: var(--paragraphs-font);
+  width: 600px;
 }
 
 /* SKILLS */
