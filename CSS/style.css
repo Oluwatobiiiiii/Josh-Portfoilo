@@ -414,6 +414,11 @@ html {
 
 @media screen and (max-width: 640px) {
 
+  .hero{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .josh-intro-2{
     text-align: center;
     width: auto;
@@ -426,7 +431,7 @@ html {
     "four four"
     "five five"
     "six six";
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 
   .josh{
@@ -439,8 +444,8 @@ html {
 
   .contact-me{
     margin-top: 2rem;
-    width: auto;
-    height: 400px;
+    width: 100%;
+    padding: 2rem 1rem 2rem 1rem;
   }
 
   .contact{
