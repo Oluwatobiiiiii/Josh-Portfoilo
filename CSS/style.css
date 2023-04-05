@@ -78,32 +78,310 @@ body{
 }
 
 /* SKILLS */
+.josh-skills{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+}
 
-.skills{
+.josh-skill-1{
+  width: 260px;
+  background-color: var(--purple-background--);
+  border-radius: 10px;
+  grid-column:  1;
+  grid-row: span 3; 
+}
+
+.josh-skill-1 > p{
+  position: absolute;
+  left: 13%;
+  bottom: -25px;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.skill-1{
+  position: absolute;
+  left: 240px;
+  top: 350px;
+}
+
+.josh-skill-2{
+  background-color: var(--yellowish-background--);
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  grid-column: 2;
+}
+
+.skill-2{
+  position: absolute;
+  left: 516px;
+  bottom: 223px;
+}
+
+.josh-skill-2 > p{
+  position: absolute;
+  top: 469px;
+  left: 419px;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.josh-skill-3{
+  background-color: var(--apps-background--);
+  width: 200px; 
+  height: 200px;
+  grid-column: 3;
+  border-radius: 10px;
+}
+
+.josh-skill-3 > p{
+  position: absolute;
+  top: 469px;
+  left: 640px;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.skill-3{
+  position: absolute;
+  left: 713px;
+  bottom: 223px;
+}
+
+.josh-skill-4{
+  background-color: var(--photography-background--);
+  grid-column: 4;
+  width: 330px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.josh-skill-4 > p{
+  position: absolute;
+  top: 469px;
+  left: 838px;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.skill-4{
+  position: absolute;
+  right: 152px;
+  bottom: 221px;
+}
+
+.josh-skill-5{
+  background-color: var(--public-speaking-background--);
+  grid-column: 2/span 2;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.skill-5{
+  position: absolute;
+  right: 490px;
+  bottom: 10px;
+}
+
+.josh-skill-5 > p{
+  position: absolute;
+  top: 640px;
+  left: 420px;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.josh-skill-6{
+  background-color: var(--motion-graphics-background--);
+  grid-column: 4;
+  border-radius: 10px;
+}
+
+.skill-6{
+  position: absolute;
+  right: 150px;
+  bottom: 10px;
+}
+
+.josh-skill-6 > p{
+  position: absolute;
+  top: 640px;
+  left: 850px;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: bold;
+}
+/* NAME AND ABOUT SECTION  */
+
+.josh{
+  margin: 3rem 0 3rem 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  gap: 25px;
 }
 
-.skill-intro{
-  margin-top: 2rem;
+.josh-pix{
+  height: 400px;
+}
+
+.josh-pic{
+  flex: 50%;
+}
+
+.josh-introduction{
+  flex: 50%;
+}
+
+.josh-name{
+  font-size: 2rem;
+  color: #030303;
+  width: 100%;
+  padding-bottom: 1rem;
   font-weight: bold;
-  font-size: var(--main-intro);
-  color: var(--josh-intro-color);
+  letter-spacing: 0.1rem;
 }
 
-/* NAME AND ABOUT SECTION  */
+.josh-introduction > p{
+  font-size: 1rem;
+  color: #7A746E;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.josh-cv{
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--public-speaking-background--);
+}
+
+.josh-link{
+  text-decoration: none;
+  color: white;
+  font-size: var(--buttons-font);
+  font-weight: 600;
+}
+
+.josh-cv:hover{
+  background-color: var(--purple-background--);
+}
 
 /*  WORK */
 
-/* CONTACT US */
+.my-work{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  overflow: hidden;
+}
+
+.image-container{
+  display: flex;
+  top:142rem;
+  transition: transform 0.5s ease;
+  width:100%;
+  left: 0;
+  gap: 10px;
+}
+
+.image-container > img{
+  cursor: pointer;
+  display: flex;
+}
+
+.arrows{
+  z-index: 100;
+  width:10rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrows > img{
+  background-color: #030303;
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.arrows > img:hover{
+  background-color: #755CDE;
+}
+
+/* CONTACT ME */
+.contact-me{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #030303;
+  padding: 6rem;
+  border-radius: 1rem;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+.contact > h1{
+  font-size: 2rem;
+  color: #FFF7F0;
+  padding-bottom: 2rem;
+}
+
+.contact > p{
+  font-size: 1rem;
+  color: #FFF7F0;
+}
+
+.josh-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.josh-email{
+  flex: 50%;
+}
+
+.josh-booking{
+  width: 250px;
+  height: 55px;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--public-speaking-background--);
+}
+
+.josh-link-1{
+  text-decoration: none;
+  color: white;
+  font-size: var(--buttons-font);
+  font-weight: 600;
+}
+
+.josh-booking:hover{
+  background-color: var(--purple-background--);
+}
 
 /* FOOTER */
+#josh-footer{
+  margin-top: 2rem;
+}
 
 
-
+/* MEDIA RESPONSIVITY */
 
 
 
