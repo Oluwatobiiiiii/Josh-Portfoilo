@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/0ede7196cc.js" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="CSS/style.css"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     </head>
     <body>
@@ -35,7 +36,9 @@
         <!-- HERO-INTRO -->
 
         <section id="josh-main">
-            <div class="hero">
+            <div class="hero" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
                 <h1 class="josh-intro-1">Design solutions made easily</h1>
                 <p class="josh-intro-2">With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
             </div>
@@ -71,7 +74,7 @@
             </div>
 
             <!-- NAME AND ABOUT SECTION -->
-            <div class="josh" id="about">
+            <div class="josh" id="about" data-aos="zoom-in">
                 <div class="josh-pic">
                     <img src="Images/image-amy.webp" alt="Joshua Oluwaseun OPALEKE" class="josh-pix">
                 </div>
@@ -88,7 +91,10 @@
             </div>
 
             <!-- WORK -->
-            <div class="my-work" id="my-works">
+            <div class="my-work" id="my-works" data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500">
                 <div class="image-container">
                     <img src="Images/Day 1.1.jpg" alt="sign-up-page" class="project-0" width="300" height="300">
                     <img src="Images/Day 3.jpg" alt="Cash-pay landing page" class="project-1" width="300" height="300">
@@ -105,7 +111,9 @@
             </div>
 
             <!-- CONTACT US -->
-            <div class="contact-me" id="contact">
+            <div class="contact-me" id="contact" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <div class="contact">
                     <h1>Book a call with me</h1>
                     <p>I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
@@ -135,6 +143,9 @@
         <!-- <img id="myImg" src="Images/image-slide-3.jpg" alt="Trolltunga, Norway" width="500" height="300"> -->
 
         <!-- The Modal  -->    
-        <script src="JS/app.js" async defer></script>
+        <script src="JS/app.js" async defer>
+            
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </body>
 </html>

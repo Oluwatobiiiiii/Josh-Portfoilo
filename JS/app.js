@@ -64,3 +64,7 @@ rightButton.addEventListener('click', () => {
       leftButton.disabled = true;
     }
   });
+
+
+
+  AOS.init();
