@@ -44,7 +44,6 @@ html {
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
-  /* max-width: 100%; */
 }
 
 .nav-bar{
@@ -440,7 +439,7 @@ html {
 
   .contact-me{
     margin-top: 2rem;
-    width: 400px;
+    width: auto;
     height: 400px;
   }
 
