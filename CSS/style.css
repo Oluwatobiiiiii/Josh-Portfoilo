@@ -109,145 +109,81 @@ html {
 /* SKILLS */
 .josh-skills{
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
+  grid-template-areas: 
+  "one one two three four four"
+  "one one five five six six";
   gap: 10px;
 }
 
-.josh-skill-1{
-  width: 260px;
+.illustartion  > img{
+  position: absolute;
+  right: 10%;
+  top:10%
+}
+
+.illustartion > p{
+  position: absolute;
+  left: 10%;
+  bottom:10%;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.illustartion {
+  position: relative;
+}
+
+.one{
   background-color: var(--purple-background--);
   border-radius: 10px;
-  grid-column:  1;
-  grid-row: span 3; 
+  grid-area: one;
 }
 
-.josh-skill-1 > p{
-  position: absolute;
-  left: 13%;
-  bottom: -25px;
-  font-size: 1.3rem;
-  color: #fff;
-  font-weight: bold;
-}
-
-.skill-1{
-  position: absolute;
-  left: 240px;
-  top: 350px;
-}
-
-.josh-skill-2{
+.two{
   background-color: var(--yellowish-background--);
-  width: 200px;
-  height: 200px;
   border-radius: 10px;
-  grid-column: 2;
+  grid-area: two;
 }
 
-.skill-2{
-  position: absolute;
-  left: 516px;
-  bottom: 223px;
-}
-
-.josh-skill-2 > p{
-  position: absolute;
-  top: 469px;
-  left: 419px;
-  font-size: 1.3rem;
-  color: #fff;
-  font-weight: bold;
-}
-
-.josh-skill-3{
+.three{
   background-color: var(--apps-background--);
-  width: 200px; 
-  height: 200px;
-  grid-column: 3;
+  grid-area: three;
   border-radius: 10px;
 }
 
-.josh-skill-3 > p{
-  position: absolute;
-  top: 469px;
-  left: 640px;
-  font-size: 1.3rem;
-  color: #fff;
-  font-weight: bold;
-}
-
-.skill-3{
-  position: absolute;
-  left: 713px;
-  bottom: 223px;
-}
-
-.josh-skill-4{
+.four{
   background-color: var(--photography-background--);
-  grid-column: 4;
-  width: 330px;
-  height: 200px;
+  grid-area: four;
   border-radius: 10px;
 }
 
-.josh-skill-4 > p{
-  position: absolute;
-  top: 469px;
-  left: 838px;
-  font-size: 1.3rem;
-  color: #fff;
-  font-weight: bold;
-}
-
-.skill-4{
-  position: absolute;
-  right: 152px;
-  bottom: 221px;
-}
-
-.josh-skill-5{
+.five{
   background-color: var(--public-speaking-background--);
-  grid-column: 2/span 2;
-  height: 150px;
   border-radius: 10px;
+  grid-area: five;
 }
 
-.skill-5{
-  position: absolute;
-  right: 490px;
-  bottom: 10px;
-}
-
-.josh-skill-5 > p{
-  position: absolute;
-  top: 640px;
-  left: 420px;
-  font-size: 1.3rem;
-  color: #fff;
-  font-weight: bold;
-}
-
-.josh-skill-6{
+.six{
   background-color: var(--motion-graphics-background--);
-  grid-column: 4;
+  grid-area: six;
   border-radius: 10px;
 }
 
-.skill-6{
-  position: absolute;
-  right: 150px;
-  bottom: 10px;
+.four, .five, .six{
+  min-height: 11.2rem;
 }
 
-.josh-skill-6 > p{
-  position: absolute;
-  top: 640px;
-  left: 850px;
-  font-size: 1.3rem;
-  color: #fff;
-  font-weight: bold;
+.two, .three{
+  min-height: 10.2rem;
 }
+
+.one{
+  min-height: 14.4rem;
+  background-color: #755CDE;
+  grid-area: one;
+}
+
 /* NAME AND ABOUT SECTION  */
 
 .josh{
@@ -356,6 +292,7 @@ html {
 .contact-me{
   display: flex;
   flex-direction: row;
+  gap: 25px;
   width: 100%;
   background-color: #030303;
   padding: 6rem;
@@ -419,12 +356,91 @@ html {
   gap: 25px;
 }
 
-/* MEDIA RESPONSIVITY */
 
+/* MEDIA RESPONSIVITY FOR TABLETS */
+@media screen and (max-width: 900px){
 
+  body{
+    background-color: #FFF7F0;
+    margin: 4% 10%;
+    overflow-x: hidden !important;
+  }
+  
+  .josh-skills{
+    display: grid;
+    grid-template-areas: 
+    "one  one  two  three"
+    "one  one  four  four"
+    "five  five   six   six";
+  }
 
+  .one{
+    grid-area: one;
+  }
 
+  .two{
+    grid-area: two;
+  }
 
+  .three{
+    grid-area: three;
+  }
+
+  .four{
+    grid-area: four;
+  }
+
+  .five{
+    grid-area: five;
+  }
+
+  .six{
+    grid-area: six;
+  }
+
+  .contact-me{
+    flex-direction: column;
+  }
+
+  .josh-pix{
+    height: 300px;
+  }
+
+  .contact{
+    text-align: center;
+  } 
+}
+
+/* MEDIA RESPONSIVITY FOR PHONES */
+
+@media screen and (max-width: 640px) {
+
+  .josh-intro-2{
+    text-align: center;
+    width: auto;
+  }
+  .josh-skills{
+    grid-template-areas: 
+    "one one"
+    "one one"
+    "two three"
+    "four four"
+    "five five"
+    "six six";
+  }
+
+  .josh{
+    flex-direction: column;
+  }
+
+  .josh-introduction{
+    text-align: center;
+  }
+
+  .contact{
+    width: 300px;
+  }
+}
 
 
 

@@ -35,7 +35,6 @@ const rightButton = document.querySelector('.right-button');
 const imageContainer = document.querySelector('.image-container');
 const myWork = document.querySelectorAll('.image-container img');
 let activeButton;
-
 let counter = 0;
 const size = window.innerWidth < 640? 300 : 540;
 
