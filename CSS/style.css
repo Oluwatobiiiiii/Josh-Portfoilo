@@ -427,6 +427,7 @@ html {
     "four four"
     "five five"
     "six six";
+    margin-top: 3rem;
   }
 
   .josh{
@@ -437,9 +438,21 @@ html {
     text-align: center;
   }
 
-  .contact{
-    width: 300px;
+  .contact-me{
+    margin-top: 2rem;
+    width: 400px;
+    height: 400px;
   }
+
+  .contact{
+    width: 400px;
+    font-size: unset;
+  }
+  
+  body{
+    overflow-x: hidden;
+  }
+
 }
 
 
