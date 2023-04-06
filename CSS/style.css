@@ -495,7 +495,7 @@ html {
   }
   
   #navbar-links{
-    left: 100px;
+    left: 90px;
     position: absolute;
     top: 10px;
     flex-direction: column;
