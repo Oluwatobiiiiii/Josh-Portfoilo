@@ -60,7 +60,11 @@ html {
   justify-content: center;
 }
 
-#navbar-links{
+.harmburger{
+  display: none;
+}
+
+.desktop-links{
   display: flex;
   flex-direction: row;
   margin-left: auto;
@@ -491,7 +495,7 @@ html {
   }
   
   #navbar-links{
-    left: 108px;
+    left: 100px;
     position: absolute;
     top: 10px;
     flex-direction: column;
