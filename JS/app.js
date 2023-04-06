@@ -26,6 +26,35 @@
     
 //  }
 
+// NAVBAR
+
+const navbarLinks = document.getElementById("navbar-links")
+const openButton = document.getElementById("open")
+const closeButton = document.getElementById("close");
+
+openButton.addEventListener("click", function(){
+  if(openButton.style.display = 'block'){
+    closeButton.style.display = 'block';
+    navbarLinks.style.display = 'flex'
+    openButton.style.display = 'none';
+
+  }else{
+    console.log("error");
+  }
+});
+
+
+
+closeButton.addEventListener("click", function(){
+  if(closeButton.style.display = "block"){
+    openButton.style.display = "block";
+    closeButton.style.display = "none";
+    navbarLinks.style.display = "none";
+  }else{
+    console.log("error");
+  }
+});
+
 
 
 // IMAGE SLIDER SECTION

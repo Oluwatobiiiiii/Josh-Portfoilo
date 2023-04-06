@@ -60,7 +60,7 @@ html {
   justify-content: center;
 }
 
-.navbar-links{
+#navbar-links{
   display: flex;
   flex-direction: row;
   margin-left: auto;
@@ -459,6 +459,57 @@ html {
   
   body{
     overflow-x: hidden;
+  }
+
+  .harmburger{
+    position: relative;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  #open{
+    height: 25px;
+    cursor: pointer;
+  }
+
+  #close{
+    height: 35px;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    margin-right: 2.5rem;
+  }
+
+  .nav-bar{
+    position: relative;
+  }
+
+  .nav-links{
+    position: absolute;
+  }
+  
+  #navbar-links{
+    left: 108px;
+    position: absolute;
+    top: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: black;
+    width: 200px;
+    height: 200px;
+    padding-top: 1rem;
+    z-index: 999;
+    display: none;
+    transition: all .5s ease-in-out;
+    border-radius: 10px;
+  }
+
+  .josh-links > a{
+    color: #fff;
+    display: flex;
   }
 
 }
